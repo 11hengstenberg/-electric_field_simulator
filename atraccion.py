@@ -2,27 +2,9 @@ import numpy as np
 from vpython import *
 
 
-"""
-#----------------------------------------------------------------------------#
 
-#particulas = carga , masa
-particula = [-1.6*(10**-19),9.1*(10**-31)]
-
-el plano esta en centimetros
-
-#variables
-velocidad_inicial=5*(10**6)
-angulo_inicial = 90
-campo_electrico = 714
-
-en centimetros
-
-largo_suelo = 0.06
-#----------------------------------------------------------------------------#
-"""
 
 def valores (particula, velocidad_inicial,angulo_inicial,largo_suelo, campo_electrico):
-        
 
 
     largo_suelo = largo_suelo*100
@@ -36,9 +18,6 @@ def valores (particula, velocidad_inicial,angulo_inicial,largo_suelo, campo_elec
 
     #tiempo total
     tiempo_total =  (2*velocidad_Y)/(aceleracion*-1)
-
-    #distancia total
-    distancia_total = velocidad_X*tiempo_total*100
 
 
     #suleo
@@ -148,5 +127,31 @@ def valores (particula, velocidad_inicial,angulo_inicial,largo_suelo, campo_elec
             #frames por segundo o velocidad de la animacion
             rate(10)
 
+"""
+#----------------------------------------------------------------------------#
 
+#particulas = carga , masa
+particula = [-1.6*(10**-19),9.1*(10**-31)]
+
+el plano esta en centimetros
+
+#variables
+velocidad_inicial=5*(10**6)
+angulo_inicial = 90
+campo_electrico = 714
+
+en centimetros
+
+largo_suelo = 0.06
+#----------------------------------------------------------------------------#
+"""
+
+"""
+particula = [1.6*(10**-19), 9.1*(10**-27), "blue"]
+velocidad_inicial=5*(10**4)
+angulo_inicial = 85
+campo_electrico = -514
+largo_suelo = 0.6
+valores(particula,velocidad_inicial,angulo_inicial,largo_suelo,campo_electrico)
+"""
 

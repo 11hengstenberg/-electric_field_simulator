@@ -13,6 +13,10 @@ def neutro_campo(particula,velocidad_inicial,angulo_inicial,largo_suelo,campo_el
     #tiempo total
     tiempo_total = (velocidad_X*largo_suelo)/1000000000000000
 
+    if (velocidad_inicial<1000000):
+        resta = 5000000-velocidad_inicial
+        tiempo_total = ((velocidad_X+resta)*largo_suelo)/1000000000000000
+
 
     #suleo
     suelo = box(

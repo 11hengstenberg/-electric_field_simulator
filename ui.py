@@ -5,6 +5,15 @@ import atraccion as atrac
 import repolcion as repul
 
 """
+ir variando velocidad para que se pueda ver la animacion en centimetros.
+para e-31 = velocidad: 5e6 campo: 714
+para e-30 = velocidad: 5e6 campo: 514
+para e-27 = velocidad: 5e4 campo: 514  
+"""
+
+
+
+"""
 variables de particulas
     "proton",
     "electron",
@@ -57,14 +66,19 @@ def asignar_particula(velocidad1,angulo1,particula1,tamanio1,fuerza1):
         datos_particula = tau
     if (particula1 == "tridio"):
         datos_particula = tridio
+    
+    print (datos_particula)
 
     if (datos_particula[0] == 0 or fuerza1 == 0):
+        print ("entro a igual")
         neu.valores(datos_particula,velocidad1,angulo1,tamanio1,fuerza1)
     
     elif((datos_particula[0]>0 and fuerza1 < 0) or (datos_particula[0]<0 and fuerza1 > 0) ):
+        print ("entro a mas y menos")
         atrac.valores(datos_particula,velocidad1,angulo1,tamanio1,fuerza1)
 
     elif((datos_particula[0]<0 and fuerza1 < 0) or (datos_particula[0]>0 and fuerza1 > 0)):
+        print ("entro a menos y menos")
         repul.repulcion(datos_particula,velocidad1,angulo1,tamanio1,fuerza1)
 
 

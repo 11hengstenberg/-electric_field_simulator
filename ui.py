@@ -69,9 +69,6 @@ def asignar_particula(velocidad1,angulo1,particula1,tamanio1,fuerza1):
 
 
 
-
-
-
 def get_values():
     try:
         velocidad1 = float(velocidad_inicial.get())
@@ -105,7 +102,7 @@ def window_error ():
 
     error = tk.Tk()
     error.title("ERROR")
-    error.iconbitmap("icono.ico")
+    #error.iconbitmap("icono.ico")
     
     tipo_error = tk.LabelFrame( error, pady = "10")
     tk.Label(tipo_error, text = "Ingreso mal o dejo en blanco datos.").grid(row = "0", column = "0", sticky = "e",padx= "10", pady= "10")
@@ -121,7 +118,7 @@ top = tk.Tk()
 titulo
 """
 top.title("Proyecto 1 Fisica")
-top.iconbitmap ("icono.ico")
+#top.iconbitmap ("icono.ico")
 
 
 """

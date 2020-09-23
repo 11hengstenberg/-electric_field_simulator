@@ -145,11 +145,8 @@ def valores (particula, velocidad_inicial,angulo_inicial,largo_suelo, campo_elec
             #tiempo
             tiempo_inicial = tiempo_inicial + tiempo_total/100
 
-            distancia_y_= (velocidad_Y*tiempo_inicial+0.5*aceleracion*tiempo_inicial**2)*100
             #frames por segundo o velocidad de la animacion
             rate(10)
-
-
 
 
 

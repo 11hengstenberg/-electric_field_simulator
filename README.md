@@ -21,4 +21,4 @@ pip install -r requirements.txt
 
 ### Interfaz
 En la interfaz debe ingresar los datos, seleccionar la partícula y seleccionar iniciar.
-![Alt text](Universidad/Fisica/electric_field_simulator/interfaz.png?raw=true "Interfaz")
+![picture](Universidad/Fisica/electric_field_simulator/interfaz.png)

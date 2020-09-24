@@ -21,5 +21,6 @@ pip install -r requirements.txt
 
 ### Interfaz
 En la interfaz debe ingresar los datos, seleccionar la partícula y seleccionar iniciar.
+
 ![picture](interfaz.png)
 

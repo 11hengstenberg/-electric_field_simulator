@@ -10,14 +10,26 @@ El objetivo de este proyecto es simular el comportamiento de diversas partícula
 
 La simulación fue desarrollada en el lenguaje de programación python, el cual cumplía todos los requisitos para poder cumplir nuestro objetivo.
 
-
+### Ambiente Virtual
+Windows
+```
+$ python3 -m venv mienv
+$ cd mienv/Scripts
+$ activate
+```
+Linux
+```
+$ python3 -m venv mienv
+$ source mienv/bin/activate
+```
+Linux
 ### Instalación:
 ```
-git clone https://github.com/11hengstenberg/electric_field_simulator.git
-pip install -r requirements.txt
+$ git clone https://github.com/11hengstenberg/electric_field_simulator.git
+$ pip install -r requirements.txt
 ```
 ### Ejecución:
-`python ui.py`
+`$ python ui.py`
 
 ### Interfaz
 En la interfaz debe ingresar los datos, seleccionar la partícula y seleccionar iniciar.

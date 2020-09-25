@@ -16,6 +16,7 @@ Windows
 $ python3 -m venv mienv
 $ cd mienv/Scripts
 $ activate
+$ pip install tk
 ```
 Linux
 ```
@@ -27,6 +28,7 @@ Linux
 ```
 $ git clone https://github.com/11hengstenberg/electric_field_simulator.git
 $ pip install -r requirements.txt
+$ sudo apt-get install python-tk
 ```
 ### Ejecución:
 `$ python ui.py`
